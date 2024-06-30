@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+}
+
+/* Calculator Styles */
+.calculator {
+    background-color: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 25rem;
+    align-items: center;
+    position: fixed;
+}
+
+#screen {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    height: 6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#clock{
+    text-align: right;
+}
+
+#main {
+    font-size: 2.5rem;
+}
+input#expression {
+    background-color: #444;
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    max-width: 25rem;
+    overflow: hidden;
+    border: none;
+}
+
+input#expression:focus {
+    outline: none;
+}
+
+#answer {
+    font-size: 2rem;
+    text-align: right;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0.3rem;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    justify-content: center;
+}
+
+.row {
+    margin-right: 2rem;
+}
+
+button#delete{
+    position: absolute;
+    width: 7.3rem;
+    height: 19.9rem;
+    background-color: rgb(238, 98, 17);
+}
+button#delete:hover{
+    background-color: rgb(176, 67, 4);
+}
+button:hover {
+    background-color: #666;
+}
+
+button:active {
+    background-color: #777;
+}
+
+button#zero {
+    width: 7.9rem;
+}
+
+button#clear, button#sign, button#percent, button#divide, button#multiply, button#subtract, button#add, button#equal {
+    background-color: #a4a824;
+    color: #fff;
+}   
+
+button#clear:hover,
+button#sign:hover,
+button#percent:hover,
+button#divide:hover,
+button#multiply:hover,
+button#subtract:hover,
+button#add:hover,
+button#equal:hover {
+    background-color: #888d0b;
+    color: #fff;
+}
